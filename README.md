@@ -15,5 +15,5 @@ with `python3 tools/fetch_pack.py`, then zip `data/pack` and install it in the a
 
 ## License
 
-[CC BY-ND 4.0](LICENSE). Genshin Impact and its map data belong to HoYoverse. This project is not affiliated with
+[CC BY-NC-ND 4.0](LICENSE). Genshin Impact and its map data belong to HoYoverse. This project is not affiliated with
 HoYoverse.
