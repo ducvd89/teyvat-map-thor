@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Debug builds only: lets adb take screenshots of the app window on any display (screencap -d cannot
+             capture the emulator's virtual secondary display). `adb shell am broadcast -a com.teyvatmap.thor.SHOT -e name x` -->
+        <!-- Debug builds only: plays an exported fixture scenario full-screen on display 0 in place of the game. -->
+        <activity
+            android:name=".debug.FakeGameActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <!-- Debug builds only: bulk mark / clear found by category name or id (see DebugMarkReceiver). -->
+        <receiver
+            android:name=".debug.DebugMarkReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.teyvatmap.thor.DEBUG_MARK_FOUND" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name=".debug.DebugShotProvider"
+            android:authorities="${applicationId}.debugshot"
+            android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+data/
+tools/.venv/
+__pycache__/
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.kotlin/
+*.apk
+tools/dataset/
+*.zip

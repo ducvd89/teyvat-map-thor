@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- scaled into the 66dp adaptive-icon safe zone so round masks don't clip the star tips -->
+    <group android:scaleX="0.8" android:scaleY="0.8" android:pivotX="54" android:pivotY="54">
+        <!-- outer compass ring -->
+        <path
+            android:pathData="M54,27.5a26.5,26.5 0 1,0 0.01,0z"
+            android:strokeColor="#F4C95D"
+            android:strokeWidth="2.4" />
+        <!-- four-point compass star with a pin-head cut-out at the centre -->
+        <path
+            android:fillColor="#F4C95D"
+            android:fillType="evenOdd"
+            android:pathData="M54,22L59.8,48.2L86,54L59.8,59.8L54,86L48.2,59.8L22,54L48.2,48.2z M54,47a7,7 0 1,0 0.01,0z" />
+        <!-- lighter north blade -->
+        <path
+            android:fillColor="#FFE9A8"
+            android:pathData="M54,22L59.8,48.2L54,50L48.2,48.2z" />
+        <!-- centre dot of the pin -->
+        <path
+            android:fillColor="#F4C95D"
+            android:pathData="M54,51.2a2.8,2.8 0 1,0 0.01,0z" />
+        <!-- intercardinal ticks -->
+        <path
+            android:fillColor="#F4C95D"
+            android:pathData="M72.5,35.5m-1.7,0a1.7,1.7 0 1,0 3.4,0a1.7,1.7 0 1,0 -3.4,0M72.5,72.5m-1.7,0a1.7,1.7 0 1,0 3.4,0a1.7,1.7 0 1,0 -3.4,0M35.5,72.5m-1.7,0a1.7,1.7 0 1,0 3.4,0a1.7,1.7 0 1,0 -3.4,0M35.5,35.5m-1.7,0a1.7,1.7 0 1,0 3.4,0a1.7,1.7 0 1,0 -3.4,0" />
+    </group>
+</vector>
